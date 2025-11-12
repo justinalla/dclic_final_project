@@ -1,0 +1,32 @@
+name: todolist
+description: "Une application de gestion des tâches."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  cupertino_icons: ^1.0.8
+  # Pour stocker préférence de connexion
+  shared_preferences: ^2.2.2 
+  path_provider: ^2.1.1 # Souvent nécessaire avec sqflite
+  crypto: ^3.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - asset/images/
+
